@@ -227,7 +227,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center bg-slate-100 p-10 rounded-2xl shadow-lg w-full lg:w-1/3 mb-7 lg:mb-0 text-sm lg:text-base">
             <h2 className="text-3xl font-semibold  text-center mb-6 text-blue-800">Control By Website.</h2>
-            <p className="text-center">Sistem ini dapat dikontrol manual ataupun otomatis melalui website ini. Jika anda minat mengontrol langsung saja mencobanya. <a href="#ayo" className="text-red-500">Let's get it!</a></p>
+            <p className="text-center">Sistem ini dapat dikontrol manual ataupun otomatis melalui website ini. Jika anda minat mengontrol langsung saja mencobanya. <a href="#ayo" className="text-red-500">Let&apos;s get it!</a></p>
           </div>
 
 
