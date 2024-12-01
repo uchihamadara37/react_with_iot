@@ -211,9 +211,9 @@ export default function Home() {
             <ul className="list-none py-3">
               <li>Andrea Alfian S. P.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220078 | IoT - IF B</li>
               <li>Kristoper Frederik H.&nbsp;&nbsp;&nbsp;&nbsp;| 123220075 | IoT - IF B</li>
-              <li>Rizki Aprilia INez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1232200 | IoT - IF B</li>
+              <li>Rizki Aprilia Ineztri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220012 | IoT - IF B</li>
               <li>Vrida Pusparani&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220082 | IoT - IF B</li>
-              <li>Erlyta Rahma Nan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1232200 | IoT - IF B</li>
+              <li>Erllyta Rachma A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220008 | IoT - IF B</li>
             </ul>
           </div>
           <div className="bg-slate-100 p-9 rounded-2xl shadow-xl w-full lg:w-1/3 text-sm lg:text-base">
