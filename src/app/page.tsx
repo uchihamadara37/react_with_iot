@@ -206,15 +206,15 @@ export default function Home() {
 
       <div className="flex justify-center text-slate-900 z-10 -mt-80 lg:-mt-80">
         <div className="flex flex-col lg:flex-row gap-6 w-10/12">
-          <div className="flex flex-col justify-center items-center bg-slate-100 p-2 py-4 lg:p-6 text-sm lg:text-base rounded-2xl shadow-xl w-full lg:w-1/3">
-            <h2 className="text-xl lg:text-3xl text-center font-semibold lg:mb-6 mb-4 text-blue-800">Anggota (IoT IF-B) : </h2>
-            <ol className="list-decimal space-y-2">
+          <div className="flex flex-col justify-center items-center bg-slate-100 p-2 py-6 lg:p-6 text-sm lg:text-base rounded-2xl shadow-xl w-full lg:w-1/3">
+            <h2 className="text-xl lg:text-3xl text-center font-semibold lg:mb-6 mb-2 text-blue-800">Anggota (IoT IF-B) : </h2>
+            <ul className="list-none py-3">
               <li>Andrea Alfian S. P.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220078 | IoT - IF B</li>
-              <li>Kristoper Frederik H.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220075 | IoT - IF B</li>
+              <li>Kristoper Frederik H.&nbsp;&nbsp;&nbsp;&nbsp;| 123220075 | IoT - IF B</li>
               <li>Rizki Aprilia INez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1232200 | IoT - IF B</li>
               <li>Vrida Pusparani&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220082 | IoT - IF B</li>
-              <li>Erlyta Rahma Nan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1232200 | IoT - IF B</li>
-            </ol>
+              <li>Erlyta Rahma Nan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1232200 | IoT - IF B</li>
+            </ul>
           </div>
           <div className="bg-slate-100 p-9 rounded-2xl shadow-xl w-full lg:w-1/3 text-sm lg:text-base">
             <h2 className="text-xl lg:text-3xl font-semibold text-center mb-5 text-blue-800">Mengatur Kelembaban Ruangan Otomatis</h2>
