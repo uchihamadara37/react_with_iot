@@ -18,23 +18,10 @@ import { Switch } from "@/components/ui/switch"
 
 
 import app from "@/lib/firebaseAdmin";
-import { getDatabase, ref, set, push, onValue } from "firebase/database";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 
 
-
-
-
-
-interface SensorData {
-  ULTRASONIC_DISTANCE: number;
-  humidity: number;
-  jarak_ketinggian_air: number;
-  nyala: string;
-  otomatis: string;
-  suhu: number;
-  water_status: string;
-}
 
 export default function Home() {
   // const [temperatureData, setTemperatureData] = useState<{ timestamp: string; temperature: number }[]>([]);
