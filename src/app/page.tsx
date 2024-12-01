@@ -63,7 +63,6 @@ export default function Home() {
     console.log('Mode otomatis:', checked ? 'Aktif' : 'Non-aktif');
 
     const db = getDatabase(app);
-    const rootRef = ref(db)
     const onOf = isAuto ? "off" : "on"
     set(ref(db, "otomatis"), onOf)
       .then(() => {
@@ -80,7 +79,6 @@ export default function Home() {
     console.log('Mode Nyala:', checked ? 'Aktif' : 'Non-aktif');
 
     const db = getDatabase(app);
-    const rootRef = ref(db)
     const onOf = isNyala ? "off" : "on"
     set(ref(db, "nyala"), onOf)
       .then(() => {
