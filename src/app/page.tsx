@@ -131,15 +131,15 @@ export default function Home() {
         <div className="container mx-auto px-4 flex  justify-center h-full">
           <div className="text-center text-white z-10 ">
             <h1 className="text-3xl lg:text-5xl font-bold mb-4 mt-20">Selamat Datang di Smart Humidity System</h1>
-            <p className="text-lg lg:text-xl mb-6">Embedded System untuk mengatur kelembapan ruangan.</p>
+            <p className="text-lg lg:text-xl mb-6">Embedded System untuk mengatur kelembaban ruangan.</p>
 
             <Drawer>
               <DrawerTrigger
 
-                className="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300 font-bold mt-10"
+                className="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300 font-bold mt-5"
               >
                 Kontrol Sekarang</DrawerTrigger>
-              <DrawerContent className="h-4/5">
+              <DrawerContent className="h-5/6">
                 <DrawerHeader >
                   <DrawerTitle className="text-center text-violet-500 text-xl">Terdapat beberapa kontroler di sini. Silakan diatur Master..</DrawerTitle>
                   <DrawerDescription className="text-center text-violet-700">Setiap tindakan tidak dapat dikembalikan.</DrawerDescription>
@@ -204,11 +204,11 @@ export default function Home() {
 
       </div>
 
-      <div className="flex justify-center text-slate-900 z-10 -mt-72 lg:-mt-80">
+      <div className="flex justify-center text-slate-900 z-10 -mt-80 lg:-mt-80">
         <div className="flex flex-col lg:flex-row gap-6 w-10/12">
-          <div className="flex flex-col justify-center items-center bg-slate-100 p-2 py-8 lg:p-6 text-sm lg:text-base rounded-2xl shadow-xl w-full lg:w-1/3">
-            <h2 className="text-xl lg:text-3xl text-center font-semibold lg:mb-6 mb-4 text-blue-800">Team Consist : </h2>
-            <ol className="list-decimal pl-6 space-y-2">
+          <div className="flex flex-col justify-center items-center bg-slate-100 p-2 py-4 lg:p-6 text-sm lg:text-base rounded-2xl shadow-xl w-full lg:w-1/3">
+            <h2 className="text-xl lg:text-3xl text-center font-semibold lg:mb-6 mb-4 text-blue-800">Anggota (IoT IF-B) : </h2>
+            <ol className="list-decimal space-y-2">
               <li>Andrea Alfian S. P.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220078 | IoT - IF B</li>
               <li>Kristoper Frederik H.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 123220075 | IoT - IF B</li>
               <li>Rizki Aprilia INez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1232200 | IoT - IF B</li>
@@ -226,7 +226,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col justify-center bg-slate-100 p-10 rounded-2xl shadow-lg w-full lg:w-1/3 mb-7 lg:mb-0 text-sm lg:text-base">
-            <h2 className="text-3xl font-semibold  text-center mb-6 text-blue-800">Control By Website.</h2>
+            <h2 className="text-xl lg:text-3xl font-semibold  text-center mb-6 text-blue-800">Control By Website.</h2>
             <p className="text-center">Sistem ini dapat dikontrol manual ataupun otomatis melalui website ini. Jika anda minat mengontrol langsung saja mencobanya. <a href="#ayo" className="text-red-500">Let&apos;s get it!</a></p>
           </div>
 
