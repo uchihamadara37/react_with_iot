@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 import {
   Drawer,
@@ -12,53 +12,17 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Terminal } from "lucide-react";
+import { AlertTitle } from "@/components/ui/alert"
+
 import { Switch } from "@/components/ui/switch"
 
-import { initializeApp } from "firebase/app";
-// import { getDatabase, ref, set, get, onValue, update } from "firebase/database";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "@/lib/firebaseAdmin";
+
 import app from "@/lib/firebaseAdmin";
 import { getDatabase, ref, set, push, onValue } from "firebase/database";
 
 
 
-// const firebaseConfig = {
-//   databaseURL: "https://kelembaban-ruang-default-rtdb.firebaseio.com/",
-//   // Anda tidak perlu memasukkan "secretnya" di aplikasi front-end untuk alasan keamanan.
-// };
-// const app = initializeApp(firebaseConfig);
-// const db = getDatabase(app);
-// const ultrasonicRef = ref(db, "ULTRASONIC_DISTANCE");
 
-// onValue(ultrasonicRef, (snapshot) => {
-//   const data = snapshot.val();
-//   console.log("Data ULTRASONIC_DISTANCE:", data);
-// });
-
-// // menulis data
-// set(ref(db, "humidity"), 55)
-//   .then(() => {
-//     console.log("Data berhasil ditulis.");
-//   })
-//   .catch((error) => {
-//     console.error("Error menulis data:", error);
-//   });
-
-
-// // mengupdate data
-// update(ref(db), {
-//   humidity: 60,
-//   suhu: 25,
-// })
-//   .then(() => {
-//     console.log("Data berhasil diperbarui.");
-//   })
-//   .catch((error) => {
-//     console.error("Error memperbarui data:", error);
-//   });
 
 
 
@@ -73,9 +37,9 @@ interface SensorData {
 }
 
 export default function Home() {
-  const [temperatureData, setTemperatureData] = useState<{ timestamp: string; temperature: number }[]>([]);
-  const [isHumidifierOn, setIsHumidifierOn] = useState(false);
-  const [loading, setLoading] = useState(false);
+  // const [temperatureData, setTemperatureData] = useState<{ timestamp: string; temperature: number }[]>([]);
+  // const [isHumidifierOn, setIsHumidifierOn] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const [isNyala, setIsNyala] = useState(false);
   const [isAuto, setIsAuto] = useState(false);
@@ -157,23 +121,23 @@ export default function Home() {
   }, []);
 
   // Handle humidifier toggle
-  const toggleHumidifier = async () => {
-    setLoading(true);
-    try {
-      // Kirim status baru ke endpoint API Anda
-      const response = await fetch("/api/humidifier", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ status: !isHumidifierOn }),
-      });
-      const result = await response.json();
-      setIsHumidifierOn(result.status);
-    } catch (error) {
-      console.error("Failed to toggle humidifier:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const toggleHumidifier = async () => {
+  //   setLoading(true);
+  //   try {
+  //     // Kirim status baru ke endpoint API Anda
+  //     const response = await fetch("/api/humidifier", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ status: !isHumidifierOn }),
+  //     });
+  //     const result = await response.json();
+  //     setIsHumidifierOn(result.status);
+  //   } catch (error) {
+  //     console.error("Failed to toggle humidifier:", error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-200" id="ayo">
