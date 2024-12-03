@@ -30,6 +30,9 @@ export default function Home() {
 
   const [isNyala, setIsNyala] = useState(false);
   const [isAuto, setIsAuto] = useState(false);
+  const [suhu, setSuhu] = useState(0.0);
+  const [hum, setHum] = useState(0.0);
+  const [waterLevel, setWaterLevel] = useState(0);
 
 
   useEffect(() => {
@@ -42,6 +45,9 @@ export default function Home() {
       // Akses data spesifik
       const otoma = data.otomatis;
       const nyalai = data.nyala;
+      setSuhu(data.suhu);
+      setHum(data.humidity);
+      setWaterLevel(data.water_status);
 
       console.log("Otomatis status:", otoma);
       console.log("Nyala status:", nyalai);
@@ -49,6 +55,7 @@ export default function Home() {
       // Update state setelah data diterima
       setIsNyala(nyalai === "on");
       setIsAuto(otoma === "on")
+      
     }, (error) => {
       console.error("Error reading data:", error);
     });
@@ -150,13 +157,13 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col lg:flex-row justify-center w-full gap-3">
                     <div className="flex-initial w-full lg:w-1/3 border border-orange-500 rounded-md p-4">
-                      Suhu : { } &deg;C
+                      Suhu : {suhu} &deg;C
                     </div>
                     <div className="flex-initial w-full lg:w-1/3  border-2 border-fuchsia-300 rounded-md p-4">
-                      Kelembapan : { }% RH
+                      Kelembapan : {hum}% RH
                     </div>
                     <div className="flex-initial w-full lg:w-1/3 border-2 border-blue-500 rounded-md p-4">
-                      Ketinggian air : { } cm
+                      Ketinggian air : {waterLevel} cm
                     </div>
 
                   </div>
