@@ -163,7 +163,7 @@ export default function Home() {
                       Kelembapan : {hum}% RH
                     </div>
                     <div className="flex-initial w-full lg:w-1/3 border-2 border-blue-500 rounded-md p-4">
-                      Ketinggian air : {waterLevel} cm
+                      Ketinggian air : {waterLevel}
                     </div>
 
                   </div>
@@ -185,9 +185,7 @@ export default function Home() {
                           <label htmlFor="airplane-mode">{isNyala ? 'Pelembab hidup' : 'Pelembab mati'}</label>
                         </div>
                       </div>
-
                     )}
-
 
                   </div>
                 </div>
